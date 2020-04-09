@@ -1,5 +1,17 @@
 # Check-COVID-19
-2019新型冠状病毒肺炎（COVID-19）感染风险自助检测程序，这是一个Scheme语言学习实例程序.
+2019新型冠状病毒肺炎（COVID-19）感染风险自助检测程序
+=
+这是一个Scheme语言学习实例程序.
+```scheme
+; 2019新型冠状病毒肺炎（COVID-19）感染风险自助检测程序
+(define A1 (list "发热" (cons "三天内" 5) (cons "三天到一周" 10) (cons "超过一周" 15)))
+(define A2 (list "咳嗽" (cons "无痰" 15) (cons "有痰难吐" 10) (cons "有痰易吐" -10)))
+(define A3 (list "乏力" (cons "无" -15) (cons "轻微" 15) (cons "明显" 30)))
+(define A4 (list "腹泻" (cons "无" 0) (cons "轻微" 10) (cons "明显" 5)))
+(define A5 (list "呼吸困难" (cons "无" 0) (cons "略感胸闷" 15) (cons "明显" 30)))
+```
+根据上面定义诊断知识编写程序，交互式的引导用户回答提问，最后给出诊断结果。
+你也可以调整这里定义的风险值，以使它更接近实际的效果。
 
 双击批处理文件 2019-nCovTest.bat 即可打开Scheme程序运行源码 check-2019-nCov.ss
 
@@ -8,17 +20,18 @@ https://scheme.com/download/pcsv84.exe
 更多信息，请参考：
 https://cisco.github.io/ChezScheme/#get
 
+你也可以参考下面的文章，自己进行编译。
+[Windows下编译最新版ChezScheme](https://www.cnblogs.com/bluedoctor/p/11887867.html)
+
 --------------------------
 下面是程序运行的示意结果：
 --------------------------
 
-========新冠病毒肺炎(COVID-19)诊断检测实验程序============
-
-**    注意：本程序仅为演示Scheme计算机语言编程使用       **
-
----------作者：深蓝医生 2020-4-5..9  ----------------------
-
----------http://www.cnblogs.com/bluedoctor  ---------------
+···text
+``` ========新冠病毒肺炎(COVID-19)诊断检测实验程序============
+```**    注意：本程序仅为演示Scheme计算机语言编程使用       **
+```---------作者：深蓝医生 2020-4-5..9  ----------------------
+```---------http://www.cnblogs.com/bluedoctor  ---------------
 
 
  一、开始身体症状测试 ：
@@ -94,6 +107,6 @@ https://cisco.github.io/ChezScheme/#get
 您患 COVID-19 的整体风险检测概率是：212%
 ========================================
 Test...ok
-
+```text
 
 
